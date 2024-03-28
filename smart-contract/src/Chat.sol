@@ -29,7 +29,7 @@ contract Chat {
     Message[] public messageArray;
 
     function sendMessage(string memory _text, address _reciever) public {
-        require(address(ens) == msg.sender, "you dot have a ens");
+        require(address(ens) == msg.sender, "you dot have an ens");
 
         uint256 Txtid = MSGid += 1;
         require(msg.sender != address(0), "invalid address");
